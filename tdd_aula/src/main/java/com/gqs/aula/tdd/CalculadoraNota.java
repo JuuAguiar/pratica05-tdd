@@ -18,7 +18,12 @@ public class CalculadoraNota {
     private void validarNota(double nota, double notaMaxima, String nomeAvaliacao) {
         if (nota < 0 || nota > notaMaxima) {
             throw new IllegalArgumentException(
-                nomeAvaliacao + " deve estar entre 0 e " + notaMaxima);
+                    nomeAvaliacao + " deve estar entre 0 e " + notaMaxima);
         }
     }
+
+    public String situacao(double notaFinal, double frequencia) {
+        return "";
+    }
+
 }
