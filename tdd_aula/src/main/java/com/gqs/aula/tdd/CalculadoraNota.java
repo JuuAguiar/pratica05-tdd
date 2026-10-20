@@ -40,4 +40,8 @@ public class CalculadoraNota {
         return notaInsuficiente && frequenciaSuficiente && somaSuficiente;
     }
 
+    public double aplicarAI(double a1, double a2, double a3, double notaAI) {
+        return 0;
+    }
+
 }
