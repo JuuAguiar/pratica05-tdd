@@ -30,4 +30,8 @@ public class CalculadoraNota {
         return "REPROVADO";
     }
 
+    public boolean podeFazerAI(double a1, double a2, double a3, double frequencia) {
+        return false;
+    }
+
 }
