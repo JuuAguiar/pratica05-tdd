@@ -3,6 +3,10 @@ package com.gqs.aula.tdd;
 
 public class CalculadoraNota {
 
+    public static final String APROVADO = "APROVADO";
+    public static final String REPROVADO_POR_FALTA = "REPROVADO POR FALTA";
+    public static final String REPROVADO_POR_NOTA = "REPROVADO POR NOTA";
+
     public boolean estaAprovadoPorNota(double notaFinal) {
         return notaFinal >= 70;
     }
@@ -24,14 +28,14 @@ public class CalculadoraNota {
 
     public String situacao(double notaFinal, double frequencia) {
         if (frequencia < 75) {
-            return "REPROVADO POR FALTA";
+            return REPROVADO_POR_FALTA;
         }
 
         if (!estaAprovadoPorNota(notaFinal)) {
-            return "REPROVADO POR NOTA";
+            return REPROVADO_POR_NOTA;
         }
 
-        return "APROVADO";
+        return APROVADO;
     }
 
     public boolean podeFazerAI(double a1, double a2, double a3, double frequencia) {
